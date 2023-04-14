@@ -45,7 +45,7 @@ async function recreateDB(){
   // Delete everything
   await car.deleteMany();
   let instance1 = new 
- car({manufacture:"benz", model:"Gle-320-d", 
+ car({manufacturer:"benz", model:"Gle-320-d", 
  price:129000});
    
  instance1.save().then( () => {
@@ -54,7 +54,7 @@ async function recreateDB(){
    console.log('There was an error', e.message);
  });
  let instance2 = new 
- car({manufacture:"audi", model:"A4", 
+ car({manufacturer:"audi", model:"A4", 
  price:58999});
    
  instance2.save().then( () => {
@@ -63,7 +63,7 @@ async function recreateDB(){
    console.log('There was an error', e.message);
  });
  let instance3 = new 
- car({manufacture:"toyota", model:"corala", 
+ car({manufacturer:"toyota", model:"corala", 
  price:50000});
    
  instance3.save().then( () => {
