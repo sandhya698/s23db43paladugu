@@ -1,0 +1,16 @@
+extends layout
+block content
+ h1= title
+ - let car_manufacturer = toShow.manufacturer
+ - let carprice = toShow.price
+ - let carmodel = toShow.model
+    div
+      div.rows
+      div(class='carAttr mr-3') car Manufacturer is:
+    div #{car_manufacturer}
+    div.row
+      div(class='carAttr mr-3') car model is:
+      div #{carmodel}
+    div.row
+    div(class='carAttr mr-3') car price is:
+    div #{carprice}
