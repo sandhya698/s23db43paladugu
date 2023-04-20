@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    h1= title
+    h1(class='update')= title
 
     if (toShow == null)
         h2 No instance to update
@@ -16,7 +16,7 @@ block content
             div.mr-1 ID is
             div #{Carid}
         - let actionid = "/resource/cars/"+Carid
-        form(id='CarForm', action= actionid, method="PUT")
+        form(id='CarForm', action= actionid, method="PUT" class="carAttr")
           div.form-group
             label.CarAttr(for='manufacturer') Car Name
             input#manufacturer(type='text' name='manufacturer', value= manufacturer )
