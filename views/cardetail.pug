@@ -1,6 +1,9 @@
 extends layout
 block content
  h1(class='bonus')= title
+ if (toShow==null)
+   h2 No Instance to detail
+ else
  - let car_manufacturer = toShow.manufacturer
  - let carprice = toShow.price
  - let carmodel = toShow.model
